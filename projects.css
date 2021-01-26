@@ -1,0 +1,173 @@
+
+.navbar{
+    background-color: black ! important;
+    opacity: 0.5;
+    /* since we have a dark navbar and light text it create a sort of negative display */
+    /* Use rgba to allow the transparent navbar without affecting text */
+    /* background-color: rgba(0,0,0,0.5) ! important; */
+}
+.navbar .navbar-brand{
+    margin-left: 5%;
+    font-size: 24px;
+    font-family: 'Nothing You Could Do';
+    color:white;
+    padding: 10px 15px;
+}
+.navbar .navbar-brand:hover{
+    color: gray;
+    transition: all 0.45s;
+    opacity: 0.9;
+    filter:alpha (opacity=90);
+}
+.navbar-nav{
+    margin-right: 5%;
+}
+.nav-item{
+    margin-right: 20px;
+    /* color: rgb(196, 78, 78);  */
+    /* the link underline turns red right before lightgray */
+}
+/* Bootstrap active class nav link */
+.navbar-dark .navbar-nav .active>.nav-link{
+  color: white;
+}
+.nav-link{
+    font-size: 20px;
+    font-family: 'Audiowide';
+}
+.nav-item:hover{
+    border-bottom-style: solid;
+    border-bottom-color: lightgray;
+    border-bottom-width: 1px;
+    transition: all 0.45s;
+    opacity: 0.9;
+    filter:alpha (opacity=90);
+}
+.navbar-dark .navbar-nav .active>.nav-link:hover{
+    color: lightgray;
+    transition: all 0.45s;
+    opacity: 0.9;
+    filter:alpha (opacity=90);
+}
+/* .nav{
+  display: flex;
+  align-content: center;
+} */
+
+body, html{
+  height: 100%;
+  margin: 0;
+  
+}
+.img2, .img3, .img4{
+  position: relative;
+}
+.img2{
+  background: #00B4DB;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 950px;
+}
+.img3{
+  background: #e53935;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e35d5b, #e53935);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #e35d5b, #e53935); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 1000px;
+  margin-top: -50px;
+}
+.img4{
+  background: #b79891; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b79891, #94716b); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b79891, #94716b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 1000px;
+  margin-top: -0px;
+}
+
+.img2-content{
+  text-align: center;
+  padding-top: 100px;
+  font-family: 'Lato';
+  
+}
+.img3-content{
+  text-align: center;
+  padding-top: 100px;
+  font-family: 'Lato';
+}
+.img4-content{
+  text-align: center;
+  padding-top: 100px;
+  font-family: 'Lato';
+}
+
+@media(max-width: 568px){
+  .img2, .img3, .img4{
+    background-attachment: scroll;
+  }
+}
+/* Live site and Github link */
+#link{
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  margin: 20px;
+  border: 2px solid black;
+}
+#link:hover{
+  color: white;
+  border: 2px solid white;
+  background-color: rgb(0, 149, 199);
+  transition: all 0.45s;
+}
+.project1{
+  margin-top: 50px;
+}
+.post{
+  width: 560px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  margin-left: -280px;
+  cursor: pointer;
+}
+.post:hover .post-s{
+  /* width: 560px; */
+  height: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.post img{
+  display: block;
+  width: 560px;
+  height: 400px;
+}
+.post-s{
+  width: 560px;
+  height: 0px;
+  /* background: rgba(31, 0, 18, 0.90); */
+  /* background: rgba(255, 255, 255, 0.95); */
+  background: #232526;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: absolute;
+  top: 0;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  overflow: hidden;
+  transition: 0.7s ease;
+}
+.post-s h2{
+  color: white;
+  font-size: 30px;
+  font-family: 'Arvo';
+  text-decoration: underline overline;
+}
+.post-s p{
+  margin: 40px;
+  color: white;
+  font-size: 24px;
+  font-family: 'Lato';
+}
+#project-header{
+  font-family: 'Nothing You Could Do';
+}

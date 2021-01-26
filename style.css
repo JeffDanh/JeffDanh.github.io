@@ -1,0 +1,258 @@
+/* Current navbar */
+.navbar{
+    /* background-color: black ! important; */
+    /* opacity: 0.5; */
+    /* since we have a dark navbar and light text it create a sort of negative display */
+    /* Use rgba to allow the transparent navbar without affecting text */
+    background-color: rgba(0,0,0,0.5) ! important;
+}
+.navbar .navbar-brand{
+    margin-left: 5%;
+    font-size: 24px;
+    font-family: 'Iceland';
+    color:white;
+    padding: 10px 15px;
+}
+.navbar .navbar-brand:hover{
+    color: gray;
+    transition: all 0.45s;
+    opacity: 0.9;
+    filter:alpha (opacity=90);
+}
+.navbar-nav{
+    margin-right: 5%;
+}
+.nav-item{
+    margin-right: 20px;
+    /* color: rgb(196, 78, 78);  */
+    /* the link underline turns red right before lightgray */
+}
+/* Bootstrap active class nav link */
+.navbar-dark .navbar-nav .active>.nav-link{
+  color: whitesmoke;
+}
+.nav-link{
+    font-size: 20px;
+    font-family: 'Audiowide';
+}
+.nav-item:hover{
+    border-bottom-style: solid;
+    border-bottom-color: lightgray;
+    border-bottom-width: 1px;
+    transition: all 0.45s;
+    opacity: 0.9;
+    filter:alpha (opacity=90);
+}
+.navbar-dark .navbar-nav .active>.nav-link:hover{
+    color: lightslategray;
+    transition: all 0.45s;
+    opacity: 0.9;
+    filter:alpha (opacity=90);
+}
+/* New nav testing*/
+.floating-nav{
+    height: 100px;
+    width: 100%;
+    background: gray;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+    filter:alpha (opacity=70);
+    align-content: center;
+}
+.nav{
+    display: flex;
+    align-content: center;
+}
+h5{
+    text-align: center;
+    margin-top: 20px;
+}
+body, html{
+  height: 100%;
+  margin: 0;
+}
+.img1{
+  position: relative;
+}
+.img1{
+  opacity: 1.0;
+  /* background-image: url('Jeff2.png'); */
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+/* Testing projects banner*/
+.projects-section{
+  background: linear-gradient(to right, #2c3e50, #2980b9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 100%; /* This needs to be larger than 100% to be able to see a gradient transition */
+  height: 400px;
+}
+/* .projects-section:hover{
+  animation: animate 1s linear;
+}
+@keyframes animate{
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 400%;
+  }
+} */
+#proj{
+  text-align: center;
+}
+.projects-link{
+  text-decoration: none;
+  color: white;
+  font-family: 'Audiowide';
+  font-size: 40px;
+  /* position: relative;
+  top: 35%;
+  left: 43.5%; */
+  border: 2px solid white;
+}
+.projects-link:hover{
+  color: slategray;
+  text-decoration: none;
+  transition: all 0.45s;
+}
+/* Add profile picture*/
+#profile-pic{
+  border-radius: 50%;
+}
+.section{
+  text-align: left;
+  padding: 100px 300px;
+  font-family:'Lato';
+  font-size: 18px;
+}
+.section-dark{
+  background-color: #282e34;
+  color: #ddd;
+}
+/* Project tech stack icons*/
+#p-icons{
+  font-size: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+/* Devicon svg */
+svg{
+  width: 200px;
+  height: 200px;
+}
+.img1-content{
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  font-family:'Arvo';
+}
+.display-5{
+  color: white; 
+  font-family: 'Iceland';
+}
+
+@media(max-width: 568px){
+  .img1{
+    background-attachment: scroll;
+  }
+}
+@media(max-width: 1280px){
+  .section{
+    padding: 100px 100px;
+  }
+}
+@media(max-width: 768px){
+  .section{
+    padding: 50px 50px;
+  }
+}
+@media(max-width: 360px){
+  .section{
+    padding: 20px 20px;
+  }
+}
+/* Contact Me section */
+#cm{
+  min-height: 100%;
+  /* min-height: 800px; */
+  text-align: center;
+  margin-top: -50px;
+}
+/* LinkedIn, github, email */
+.contact-links{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  /* position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-28%, -28%); */
+  transform: translate(-3%, -3%);
+}
+@media(max-width: 360px){
+  .contact-links{
+    transform: translate(-7%, -7%);
+  }
+}
+.contact-links .cl{
+  list-style: none;
+}
+.contact-links .cl .cla{
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  text-align: center;
+  line-height: 75px;
+  font-size: 35px;
+  margin: 0px 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid whitesmoke;
+  z-index: 1;
+}
+.contact-links .cl .cla .fa{
+  position: relative;
+  color: #262626;
+  transition: .5s;
+}
+.contact-links .cl .cla:hover .fa{
+  color: #fff;
+  transform: rotateY(360deg);
+
+}
+.contact-links .cl .cla:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .5s;
+  /* z-index: 2; */
+}
+.contact-links .cl .cla:hover:before{
+  top: 0;
+}
+.contact-links .cl:nth-child(1) .cla:before{
+  background: #0077B5;
+}
+.contact-links .cl:nth-child(2) .cla:before{
+  background: rgb(0, 255, 213);
+}
+.contact-links .cl:nth-child(3) .cla:before{
+  background: rgb(228, 110, 110);
+}
+.contact-links .cl:nth-child(4) .cla:before{
+  background: palegoldenrod;
+}
