@@ -111,7 +111,7 @@ body, html{
 }
 /* Live site and Github link */
 #link{
-  color: #333333;
+  color: #232526;
   padding: 10px;
   text-decoration: none;
   margin: 20px;
@@ -120,8 +120,8 @@ body, html{
 }
 #link:hover{
   color: lightskyblue;
-  border: 2px solid lightskyblue;
-  background-color: #333333;
+  border: 2px solid #232526;
+  background-color: #232526;
   transition: all 0.45s;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
